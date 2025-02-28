@@ -1,0 +1,320 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 2760,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1246.7862082152192,
+            "y": 1106.4497281557178
+          },
+          "nodeIndex": "OpenAI",
+          "nodeLineageTag": "abe8012a-e8f3-4b2b-ae76-8b7749afa6ae",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 668.88888888888891,
+            "y": 853.59376894380875
+          },
+          "nodeIndex": "Cognitive_Services",
+          "nodeLineageTag": "80abd219-e2eb-42ef-bbd0-42591ef32a1c",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 138.36168195455559,
+            "y": 633.49532517488058
+          },
+          "nodeIndex": "Cognitive_Services_Kind",
+          "nodeLineageTag": "7a62124e-49a4-4aab-a15d-e51d39648d46",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 666.39052647590006,
+            "y": 222.87595326071278
+          },
+          "nodeIndex": "OpenAI_By_Region",
+          "nodeLineageTag": "d6f0978e-d4e1-4f6e-8612-a7a7649daff5",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 772.786208215219,
+            "y": 1187.286947996899
+          },
+          "nodeIndex": "OpenAI_By_ResourceGroup",
+          "nodeLineageTag": "72da6603-3c63-4434-8b0f-d72dc0a9f1f5",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1438.0459283880477,
+            "y": 701.07884999596
+          },
+          "nodeIndex": "OpenAI_By_SubscriptionId",
+          "nodeLineageTag": "9b331a69-a444-44e4-ab14-8612eacbc7d8",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 987.89731932633026,
+            "y": 448.22750593349554
+          },
+          "nodeIndex": "OpenAI_NoResults",
+          "nodeLineageTag": "0fe8dab9-ea9c-48f2-a191-ae8d9ae482fa",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 1843.0084304374413,
+            "y": 1231.3386170446065
+          },
+          "nodeIndex": "OpenAI_Private_Network",
+          "nodeLineageTag": "7c9cfef9-26be-4d79-81fa-fd18780b93c2",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1531.4528748818859,
+            "y": 1176.8941726001622
+          },
+          "nodeIndex": "OpenAI_Private_Network_Endpoints",
+          "nodeLineageTag": "a06ab8bf-c113-4d2d-a470-36153da2758a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 349.34439666325295,
+            "y": 1057.4248592325328
+          },
+          "nodeIndex": "OpenAI_Public_Network",
+          "nodeLineageTag": "bfe66f2e-e313-45b9-8a9b-6de85c9e172a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 2142.1195415485527,
+            "y": 1292.0052837112735
+          },
+          "nodeIndex": "Operational_Insights",
+          "nodeLineageTag": "2725f98e-1a56-4882-8ad3-9a5763c2428c",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 247.80169472793136,
+            "y": 0
+          },
+          "nodeIndex": "Resources",
+          "nodeLineageTag": "4fe7a505-3079-472a-9e23-7961587e7ef4",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 2432.7862082152187,
+            "y": 1308.67195037794
+          },
+          "nodeIndex": "Subscriptions",
+          "nodeLineageTag": "64186025-11e8-4f60-ac63-3593a0fbfe4b",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 2612.8476823768415,
+            "y": 857.45501186699107
+          },
+          "nodeIndex": "AzureOpenAINormalizedTTFTInMS",
+          "nodeLineageTag": "a45a5a0d-76d5-42f9-a2c3-f6df62a196bc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 14
+        },
+        {
+          "location": {
+            "x": 3325.1240584862626,
+            "y": 476.23625081488672
+          },
+          "nodeIndex": "AzureOpenAITTLTInMS",
+          "nodeLineageTag": "9b75f19f-2816-48fa-a8ed-841161943480",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 3047.4528748818852,
+            "y": 1117.9901810002611
+          },
+          "nodeIndex": "GeneratedTokens",
+          "nodeLineageTag": "71d06f0f-bb66-4587-b81d-c57417a7d413",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 3035.3855239465265,
+            "y": 340.23053804866896
+          },
+          "nodeIndex": "OpenAI_Insights",
+          "nodeLineageTag": "573a952b-c25f-49f3-a7ae-43b5420bc11d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 2574.6796140418182,
+            "y": 516.00528371127336
+          },
+          "nodeIndex": "OpenAI_Models",
+          "nodeLineageTag": "153e06cb-8a21-49cb-9203-3d0455e2aca6",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 18
+        },
+        {
+          "location": {
+            "x": 2867.084565491823,
+            "y": 0
+          },
+          "nodeIndex": "ProcessedPromptTokens",
+          "nodeLineageTag": "295e576c-970e-4fc6-9fac-f0e47b54ea8d",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 19
+        },
+        {
+          "location": {
+            "x": 3319.5718666866997,
+            "y": 125.9700396444191
+          },
+          "nodeIndex": "TokenTransaction",
+          "nodeLineageTag": "a6d077a8-efa9-4dfe-93c4-3b8249da0c85",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 20
+        },
+        {
+          "location": {
+            "x": 3816.0129473751513,
+            "y": 539.28306148905108
+          },
+          "nodeIndex": "AzureMetrics",
+          "nodeLineageTag": "4e8f4796-02d0-4ce0-a8a6-352ea8693533",
+          "size": {
+            "height": 306.66666666666663,
+            "width": 311.77777777777737
+          },
+          "zIndex": 23
+        },
+        {
+          "location": {
+            "x": 3948.6796140418182,
+            "y": 873.94972815571782
+          },
+          "nodeIndex": "MetricName",
+          "nodeLineageTag": "57d46c6e-3acb-4b03-bdef-96163bd8f063",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 21
+        },
+        {
+          "location": {
+            "x": 4518.90183626404,
+            "y": 478.72750593349554
+          },
+          "nodeIndex": "datedim",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 22
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 90,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

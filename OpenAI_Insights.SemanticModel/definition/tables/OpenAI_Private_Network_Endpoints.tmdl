@@ -1,0 +1,242 @@
+table OpenAI_Private_Network_Endpoints
+	lineageTag: a06ab8bf-c113-4d2d-a470-36153da2758a
+
+	column id
+		dataType: string
+		lineageTag: 956da789-dc7a-44b6-b799-e3747f0b72e3
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: d2161d52-4201-4c69-b7bf-de4ba2e3bd6d
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		lineageTag: 4d5c30da-9273-4823-a5c6-621159df7380
+		summarizeBy: none
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column tenantId
+		dataType: string
+		lineageTag: 19ef3b80-c896-459e-af24-1db26ff3896b
+		summarizeBy: none
+		sourceColumn: tenantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column kind
+		dataType: string
+		lineageTag: 9842b45f-911a-4b16-92ac-4ee7de60f229
+		summarizeBy: none
+		sourceColumn: kind
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: b9e0acc1-7f3c-4bfd-a8d5-51a6cd5a2fb1
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column resourceGroup
+		dataType: string
+		lineageTag: f5a20570-06de-4cff-b3c2-41be6ef0a28e
+		summarizeBy: none
+		sourceColumn: resourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscriptionId
+		dataType: string
+		lineageTag: 6268de48-b991-4b72-9073-2799630de04b
+		summarizeBy: none
+		sourceColumn: subscriptionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column managedBy
+		dataType: string
+		lineageTag: 075514dc-83d3-48fc-ae3f-eba6849d44c8
+		summarizeBy: none
+		sourceColumn: managedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column sku
+		dataType: string
+		lineageTag: b975015f-25fc-404e-84ad-ce1697d83290
+		summarizeBy: none
+		sourceColumn: sku
+
+		annotation SummarizationSetBy = Automatic
+
+	column plan
+		dataType: string
+		lineageTag: e632cdb1-5be5-43b3-8233-39d08a16808d
+		summarizeBy: none
+		sourceColumn: plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.provisioningState'
+		dataType: string
+		lineageTag: 250fdd48-437c-405f-84c1-bdd6d9159a87
+		summarizeBy: none
+		sourceColumn: properties.provisioningState
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.publicNetworkAccess'
+		dataType: string
+		lineageTag: 11c46f28-811f-44e0-ba2b-8bfdef3bd9a8
+		summarizeBy: none
+		sourceColumn: properties.publicNetworkAccess
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.privateEndpointConnections'
+		dataType: string
+		lineageTag: 8fdc0608-2a59-4323-bf69-683991cc6d7f
+		summarizeBy: none
+		sourceColumn: properties.privateEndpointConnections
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.endpoint'
+		dataType: string
+		lineageTag: 5f1fd853-c638-4af7-810f-38723c9c83d9
+		summarizeBy: none
+		sourceColumn: properties.endpoint
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.networkAcls'
+		dataType: string
+		lineageTag: 68620618-9e9c-43f4-b720-3f2073f5140f
+		summarizeBy: none
+		sourceColumn: properties.networkAcls
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.endpoints'
+		dataType: string
+		lineageTag: 09c1b023-abc9-43b4-bb58-93bee27d015d
+		summarizeBy: none
+		sourceColumn: properties.endpoints
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.internalId'
+		dataType: string
+		lineageTag: 95d6d029-bd29-4f71-b5c8-768fb8697448
+		summarizeBy: none
+		sourceColumn: properties.internalId
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.capabilities'
+		dataType: string
+		lineageTag: ded9ab39-6672-42d9-8ec0-e775ba82ec82
+		summarizeBy: none
+		sourceColumn: properties.capabilities
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.customSubDomainName'
+		dataType: string
+		lineageTag: 484a0622-2d2a-4286-bf02-b68093e88602
+		summarizeBy: none
+		sourceColumn: properties.customSubDomainName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.callRateLimit'
+		dataType: string
+		lineageTag: 06c7a1df-3a84-4ed4-9bde-64060fc430cb
+		summarizeBy: none
+		sourceColumn: properties.callRateLimit
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.isMigrated'
+		dataType: string
+		lineageTag: c5e74a8e-bc09-453d-9453-1f96db0f0196
+		summarizeBy: none
+		sourceColumn: properties.isMigrated
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.dateCreated'
+		dataType: string
+		lineageTag: 11158350-9a61-4099-8d36-f18b37c058f2
+		summarizeBy: none
+		sourceColumn: properties.dateCreated
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'properties.apiProperties'
+		dataType: string
+		lineageTag: 6466b187-acad-415b-bebf-f65caac49675
+		summarizeBy: none
+		sourceColumn: properties.apiProperties
+
+		annotation SummarizationSetBy = Automatic
+
+	column tags
+		dataType: string
+		lineageTag: 12a87b16-d383-4e7c-8a45-78523b9e1fd2
+		summarizeBy: none
+		sourceColumn: tags
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity
+		dataType: string
+		lineageTag: 76ecbef6-2d58-48c3-8bb4-25c1ad5e1384
+		summarizeBy: none
+		sourceColumn: identity
+
+		annotation SummarizationSetBy = Automatic
+
+	column zones
+		dataType: string
+		lineageTag: ef04afd1-e34e-4235-9c4d-268deb5e320e
+		summarizeBy: none
+		sourceColumn: zones
+
+		annotation SummarizationSetBy = Automatic
+
+	column extendedLocation
+		dataType: string
+		lineageTag: 45c8f74b-f89d-4b65-a8ea-e6f281e2b4d8
+		summarizeBy: none
+		sourceColumn: extendedLocation
+
+		annotation SummarizationSetBy = Automatic
+
+	partition OpenAI_Private_Network_Endpoints = m
+		mode: import
+		queryGroup: 'Azure Resource Graph'
+		source =
+				let
+				    Source = AzureResourceGraph.Query("#(lf)resources#(lf)| where type =~ ""microsoft.cognitiveservices/accounts""#(lf)| where kind =~ ""OpenAI""#(lf)//| where name in~ (split(""{Resources:label}"", "", ""))#(lf)| extend Details = pack_all()#(lf)| project Resource=id, resourceGroup, location, subscriptionId, kind, SKU=sku.name, publicNetworkAccess=properties.publicNetworkAccess, privateEndpointConnections=properties.privateEndpointConnections, dateCreated=properties.dateCreated, tags, Details#(lf)", "Tenant", null, null, [resultTruncated=null]),
+				    #"Expanded properties" = Table.ExpandRecordColumn(Source, "properties", {"provisioningState", "publicNetworkAccess", "privateEndpointConnections", "endpoint", "networkAcls", "endpoints", "internalId", "capabilities", "customSubDomainName", "callRateLimit", "isMigrated", "dateCreated", "apiProperties"}, {"properties.provisioningState", "properties.publicNetworkAccess", "properties.privateEndpointConnections", "properties.endpoint", "properties.networkAcls", "properties.endpoints", "properties.internalId", "properties.capabilities", "properties.customSubDomainName", "properties.callRateLimit", "properties.isMigrated", "properties.dateCreated", "properties.apiProperties"}),
+				    #"Filtered Rows" = Table.SelectRows(#"Expanded properties", each ([properties.publicNetworkAccess] <> "Enabled"))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

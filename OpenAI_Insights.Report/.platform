@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "OpenAI_Insights"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7292b11d-bdb1-42e8-bd8a-7dc37d0aec32"
+  }
+}

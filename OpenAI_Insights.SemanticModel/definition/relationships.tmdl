@@ -1,0 +1,360 @@
+relationship AutoDetected_499c8ddf-23d1-48a3-a629-d45da9a0493a
+	isActive: false
+	fromColumn: Resources.location
+	toColumn: OpenAI_By_Region.location
+
+relationship 6405249b-c063-4fce-b334-1601fdd62e0a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OpenAI_Insights.TimeGenerated
+	toColumn: LocalDateTable_b17b2a03-4623-4be5-84c5-1f2d2512ca9e.Date
+
+relationship c90ef6ac-6f1b-4919-8ee1-7fc72cd689b1
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OpenAI_Insights.startTime_t
+	toColumn: LocalDateTable_0e8a211b-a633-47df-a9d6-cddb285868dc.Date
+
+relationship 033514d1-9577-42e3-aaa1-7844c4d0e1bf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OpenAI_Insights.endTime_t
+	toColumn: LocalDateTable_cae2b05a-4581-49a1-9368-35ff45e88895.Date
+
+relationship c98e3903-4d7b-47e4-9986-337c9595dcc8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OpenAI_Insights.resultDescription_Summary_StartDateTimeUtc_t
+	toColumn: LocalDateTable_d3219845-dd93-48e9-a498-d3d3bda52c53.Date
+
+relationship 80109b0a-0328-4fab-b9c2-1cce77b79df8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: OpenAI_Insights.resultDescription_Summary_EndDateTimeUtc_t
+	toColumn: LocalDateTable_9b17d192-666e-4c2b-b363-29a700cfc972.Date
+
+relationship 93ba4bca-7d57-4cf5-a893-1d118313867c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: AzureOpenAINormalizedTTFTInMS.TimeGenerated
+	toColumn: LocalDateTable_e2e58aa5-b6e7-438c-8bad-bade732bf3a3.Date
+
+relationship 3fa23a93-02c7-4c34-9c3d-a8a53f378f30
+	joinOnDateBehavior: datePartOnly
+	fromColumn: AzureOpenAITTLTInMS.TimeGenerated
+	toColumn: LocalDateTable_30a0bba1-a959-4b66-afc7-aea73e6980ba.Date
+
+relationship e8576483-1bf0-47b7-9289-9f8ea86e3f74
+	joinOnDateBehavior: datePartOnly
+	fromColumn: GeneratedTokens.TimeGenerated
+	toColumn: LocalDateTable_f3d07a22-742b-4d69-aa95-4a9f69a09119.Date
+
+relationship f5c64c9f-5b70-4987-818c-13dc93058e51
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ProcessedPromptTokens.TimeGenerated
+	toColumn: LocalDateTable_748cb65e-b8ca-46c4-a645-1eaa9ef43eae.Date
+
+relationship c8d75cac-9167-437a-9ff8-8fc64d4dc3ff
+	joinOnDateBehavior: datePartOnly
+	fromColumn: TokenTransaction.TimeGenerated
+	toColumn: LocalDateTable_ac9add13-46da-4f8e-b6e3-e6f14993bb7e.Date
+
+relationship b883e6c1-4a8e-4c26-b893-9ae372a3dd2c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: AzureMetrics.TimeGenerated
+	toColumn: LocalDateTable_34fd4517-e0ab-4cd2-8d37-8f939b4e2d08.Date
+
+relationship ed22cc8b-50a8-ebd1-bd1e-98a227ca9512
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Operational_Insights.value
+	toColumn: OpenAI.value
+
+relationship 08895157-b05b-8ccb-c4ac-dca061aa639d
+	fromColumn: Resources.subscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship 8515215e-cd5c-26ce-29b7-b5aa1de694a0
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_By_SubscriptionId.subscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship 7a6cd3bf-5bf7-0b55-63a9-7d159a047d68
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_Public_Network.subscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship e83c0833-1021-8d0e-9c47-a45966f5c07a
+	fromColumn: OpenAI_Insights.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship 7ca18ffc-e8b9-77cf-d433-9990641ef414
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAINormalizedTTFTInMS.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship 670c9dfb-0f21-d943-992a-f997fb5e4093
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAITTLTInMS.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship d590ee86-5c31-5969-4141-33d610386067
+	fromColumn: GeneratedTokens.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship e94b3cc3-69ff-178c-c43e-d1bcb34c87bc
+	fromColumn: ProcessedPromptTokens.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship abe953fd-f4da-ce4d-d1bc-dc463708856d
+	fromColumn: TokenTransaction.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship 00858f54-80e5-4026-110b-c4523e560136
+	fromColumn: AzureMetrics.SubscriptionId
+	toColumn: OpenAI.SubscriptionId
+
+relationship 6404e047-ddb8-1fc8-3ad7-571f143586cd
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_Public_Network.resourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship 422645f9-bd05-888b-4145-855ea909e86b
+	isActive: false
+	fromColumn: OpenAI_Insights.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship 2bc0aa30-3a65-bb82-19ce-ae808440f921
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAINormalizedTTFTInMS.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship b5650f91-eacf-64a0-70c9-3f90d8bfe594
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAITTLTInMS.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship ae43539d-7387-e07d-6a1f-6927bc5f0d34
+	isActive: false
+	fromColumn: GeneratedTokens.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship 22482e26-0434-017f-3846-f05deab31114
+	isActive: false
+	fromColumn: ProcessedPromptTokens.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship 73936677-09f6-0e91-689c-e02569e94a68
+	isActive: false
+	fromColumn: TokenTransaction.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship 3b9e8258-3195-4850-569b-acb9c602941a
+	isActive: false
+	fromColumn: AzureMetrics.ResourceGroup
+	toColumn: Cognitive_Services.resourceGroup
+
+relationship c4014339-ab51-71d2-4de4-8e0d991ba67e
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_Public_Network.resourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship a0bc5a07-8125-a1ee-a841-8583f156a543
+	isActive: false
+	fromColumn: OpenAI_Insights.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship 57a2df4b-f372-4621-8dbb-3a0e6dd738ff
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAINormalizedTTFTInMS.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship b54ede37-a5bc-c2db-ef28-f029b241e41b
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAITTLTInMS.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship 208aa7c8-6b6d-677d-78f5-c96ff0344825
+	isActive: false
+	fromColumn: GeneratedTokens.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship 2e66378b-b854-6edc-0ef8-2c4321335a07
+	isActive: false
+	fromColumn: ProcessedPromptTokens.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship b56cdc13-fdd3-dc8e-ea4b-0766ad278920
+	isActive: false
+	fromColumn: TokenTransaction.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship 02cf39df-081b-9630-9445-a25310b43867
+	isActive: false
+	fromColumn: AzureMetrics.ResourceGroup
+	toColumn: OpenAI_By_ResourceGroup.resourceGroup
+
+relationship 793126ef-b8b8-89c6-adbb-7254862445e2
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_By_SubscriptionId.count_type
+	toColumn: Cognitive_Services.count_type
+
+relationship 2cc2529c-2ebe-792e-fef3-a415442b882d
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_By_Region.count_type
+	toColumn: Cognitive_Services.count_type
+
+relationship 4a1921cd-cf31-8c6f-d0e0-5d207169d585
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Cognitive_Services_Kind.count_type
+	toColumn: Cognitive_Services.count_type
+
+relationship 5669602f-f9f5-cd33-8c5b-a09931c2c7ad
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_By_SubscriptionId.count_type
+	toColumn: OpenAI_By_ResourceGroup.count_type
+
+relationship 061bd102-e848-eb42-a131-ef3bb6e87963
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_By_Region.count_type
+	toColumn: OpenAI_By_ResourceGroup.count_type
+
+relationship b104b82c-3951-d7e1-b368-0242ad8937fa
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Cognitive_Services_Kind.count_type
+	toColumn: OpenAI_By_ResourceGroup.count_type
+
+relationship 5b7ddf99-8d63-ec4f-8140-5c2ec285db7b
+	isActive: false
+	fromColumn: Resources.type
+	toColumn: OpenAI_Public_Network.type
+
+relationship f9a6a60d-00fa-963c-5d70-64f8e61377ae
+	isActive: false
+	fromColumn: OpenAI_Insights.TenantId
+	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
+
+relationship a095ff0a-3511-2bd9-a558-75c49f21e092
+	isActive: false
+	fromColumn: GeneratedTokens.TenantId
+	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
+
+relationship cdd2b555-ee59-d7a5-71bc-7a00fd6028f9
+	isActive: false
+	fromColumn: ProcessedPromptTokens.TenantId
+	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
+
+relationship a4aa1194-fcb7-856e-19e4-650340e47cf1
+	isActive: false
+	fromColumn: TokenTransaction.TenantId
+	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
+
+relationship 69338cd0-9b7a-ca7c-8d3f-16d7e6cd0ceb
+	isActive: false
+	fromColumn: AzureMetrics.TenantId
+	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
+
+relationship 623e5ca8-5354-df70-f5ab-efe78fc340e6
+	isActive: false
+	fromColumn: OpenAI_Insights.TenantId
+	toColumn: AzureOpenAITTLTInMS.TenantId
+
+relationship e9abfbf1-dd56-52bf-8e1e-1cf716325720
+	isActive: false
+	fromColumn: GeneratedTokens.TenantId
+	toColumn: AzureOpenAITTLTInMS.TenantId
+
+relationship 8f70493a-5310-4333-f3e2-cab03ab7f808
+	isActive: false
+	fromColumn: ProcessedPromptTokens.TenantId
+	toColumn: AzureOpenAITTLTInMS.TenantId
+
+relationship 550a0165-88c1-10b6-6363-6363c9e64d43
+	isActive: false
+	fromColumn: TokenTransaction.TenantId
+	toColumn: AzureOpenAITTLTInMS.TenantId
+
+relationship 3cb21005-6009-f804-a4c4-69589cdcadaa
+	isActive: false
+	fromColumn: AzureMetrics.TenantId
+	toColumn: AzureOpenAITTLTInMS.TenantId
+
+relationship 56044c45-4637-4fa8-af6b-bd055e67c8a8
+	isActive: false
+	fromColumn: Resources.kind
+	toColumn: Cognitive_Services_Kind.kind
+
+relationship 9110c5c6-608c-8eec-5c0f-bc9e90e12bc9
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_Public_Network.kind
+	toColumn: Cognitive_Services_Kind.kind
+
+relationship d46dcf72-8d1c-8d6c-2856-234c85e0a172
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: OpenAI_Public_Network.location
+	toColumn: OpenAI_By_Region.location
+
+relationship 94f49888-0f39-6727-eeeb-600cbb38032c
+	isActive: false
+	fromColumn: OpenAI_Insights.Location
+	toColumn: OpenAI_By_Region.location
+
+relationship a1e691b7-4d81-35f8-ad26-171cc44e2638
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAINormalizedTTFTInMS.MetricName
+	toColumn: MetricName.MetricName
+
+relationship c1ca2a7e-73cb-220c-975a-df57b8e65f7f
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: AzureOpenAITTLTInMS.MetricName
+	toColumn: MetricName.MetricName
+
+relationship c5a529ce-6aa0-c9af-6955-3e2862e15a06
+	isActive: false
+	fromColumn: GeneratedTokens.MetricName
+	toColumn: MetricName.MetricName
+
+relationship b408569b-3dbd-f68c-7fe9-99674467e227
+	isActive: false
+	fromColumn: ProcessedPromptTokens.MetricName
+	toColumn: MetricName.MetricName
+
+relationship ce5afd67-0dae-e2c1-67a8-b269915187c7
+	isActive: false
+	fromColumn: TokenTransaction.MetricName
+	toColumn: MetricName.MetricName
+
+relationship 788320b9-4cc0-9c01-2b3f-3c0023a859bc
+	isActive: false
+	fromColumn: AzureMetrics.MetricName
+	toColumn: MetricName.MetricName
+
+relationship 2ac65daa-257a-3f13-c5a2-64283c59a5ee
+	fromColumn: AzureMetrics.Date
+	toColumn: datedim.Date
+

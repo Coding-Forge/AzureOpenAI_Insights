@@ -1,0 +1,22 @@
+table datedim
+	lineageTag: 3d050740-fcb7-4bb4-ab6c-da7b35adef52
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: Long Date
+		lineageTag: d9fb05fa-4aaa-4e91-b277-af3b0dca0459
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition datedim = calculated
+		mode: import
+		source = CALENDAR(DATE(2024,1,1),date(2027,12,31))
+
+	annotation PBI_Id = 287de9d65218481bb8decae10fb4a0cf
+

@@ -1,0 +1,1171 @@
+table OpenAI_Insights
+	lineageTag: 573a952b-c25f-49f3-a7ae-43b5420bc11d
+
+	column TenantId
+		dataType: string
+		lineageTag: 75382c47-9bac-430f-8461-814dcce840db
+		summarizeBy: none
+		sourceColumn: TenantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimeGenerated
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: f883a86a-dc6c-440a-b152-c796928925d6
+		summarizeBy: none
+		sourceColumn: TimeGenerated
+
+		variation Variation
+			isDefault
+			relationship: 6405249b-c063-4fce-b334-1601fdd62e0a
+			defaultHierarchy: LocalDateTable_b17b2a03-4623-4be5-84c5-1f2d2512ca9e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceId
+		dataType: string
+		lineageTag: 8d792760-0c4a-4435-9f43-9336c6bf77aa
+		summarizeBy: none
+		sourceColumn: ResourceId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 3daaeab4-a0d7-4982-a43a-c9e915613b72
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceGroup
+		dataType: string
+		lineageTag: 5e4e5b1f-f68a-4deb-a1be-18d6d9a36b1f
+		summarizeBy: none
+		sourceColumn: ResourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubscriptionId
+		dataType: string
+		lineageTag: 12db20bb-30e6-4e70-9d0b-2e0180d534eb
+		summarizeBy: none
+		sourceColumn: SubscriptionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceProvider
+		dataType: string
+		lineageTag: 083dab43-8dc0-4794-98ee-1ffe73df43ae
+		summarizeBy: none
+		sourceColumn: ResourceProvider
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resource
+		dataType: string
+		lineageTag: 52cfebb5-15d4-47cd-8164-7c30283e49a4
+		summarizeBy: none
+		sourceColumn: Resource
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceType
+		dataType: string
+		lineageTag: b37ddc9a-aab5-4363-9aba-9ebef912bcdd
+		summarizeBy: none
+		sourceColumn: ResourceType
+
+		annotation SummarizationSetBy = Automatic
+
+	column OperationName
+		dataType: string
+		lineageTag: 5822cfee-b0d3-48ca-adb9-d8a99f99cd18
+		summarizeBy: none
+		sourceColumn: OperationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResultType
+		dataType: string
+		lineageTag: def07887-5110-41f8-9b42-0f76b533da95
+		summarizeBy: none
+		sourceColumn: ResultType
+
+		annotation SummarizationSetBy = Automatic
+
+	column CorrelationId
+		dataType: string
+		lineageTag: 85e25953-6ffe-4ca4-840c-7245ec52bea4
+		summarizeBy: none
+		sourceColumn: CorrelationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResultDescription
+		dataType: string
+		lineageTag: b4792a67-1e96-43cf-b9d4-83cb8cfa0bf8
+		summarizeBy: none
+		sourceColumn: ResultDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tenant_g
+		dataType: string
+		lineageTag: 09ad8bee-c2ed-465f-b8b2-7eb31a443cc1
+		summarizeBy: none
+		sourceColumn: Tenant_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column JobId_g
+		dataType: string
+		lineageTag: 58c72622-e84b-4f92-a84a-ca17e2979058
+		summarizeBy: none
+		sourceColumn: JobId_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column RunbookName_s
+		dataType: string
+		lineageTag: 730950a2-3333-4731-973c-3e6f061b5632
+		summarizeBy: none
+		sourceColumn: RunbookName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column StreamType_s
+		dataType: string
+		lineageTag: 546cfbe0-fa91-4bdb-b62e-933f6d4a38e5
+		summarizeBy: none
+		sourceColumn: StreamType_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column Caller_s
+		dataType: string
+		lineageTag: c932dac1-0b2c-4948-bd45-0a41be79d435
+		summarizeBy: none
+		sourceColumn: Caller_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column requestUri_s
+		dataType: string
+		lineageTag: ba93d939-5df5-4d5a-8419-5940c8acf295
+		summarizeBy: none
+		sourceColumn: requestUri_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level
+		dataType: string
+		lineageTag: c1b79534-12c1-4c64-b659-61f3345a85c4
+		summarizeBy: none
+		sourceColumn: Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column DurationMs
+		dataType: int64
+		formatString: 0
+		lineageTag: 41088a33-9e4a-4bed-a823-04b45b837c08
+		summarizeBy: sum
+		sourceColumn: DurationMs
+
+		annotation SummarizationSetBy = Automatic
+
+	column CallerIPAddress
+		dataType: string
+		lineageTag: f89e6cd2-ebda-4965-8577-2baae0c5d512
+		summarizeBy: none
+		sourceColumn: CallerIPAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column OperationVersion
+		dataType: string
+		lineageTag: 43fc5e82-1386-495c-8308-2b4824e600de
+		summarizeBy: none
+		sourceColumn: OperationVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResultSignature
+		dataType: string
+		lineageTag: 4d830cbb-138e-41ab-97bf-801b961d8af7
+		summarizeBy: none
+		sourceColumn: ResultSignature
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_s
+		dataType: string
+		lineageTag: 77303d96-b1d7-4524-8cea-a2b87d9097a2
+		summarizeBy: none
+		sourceColumn: id_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column status_s
+		dataType: string
+		lineageTag: 0424edbe-10a1-42e2-ba3f-344792c7b2e4
+		summarizeBy: none
+		sourceColumn: status_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column LogicalServerName_s
+		dataType: string
+		lineageTag: 9c38d41a-4359-4889-ad34-73c22d418ff4
+		summarizeBy: none
+		sourceColumn: LogicalServerName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column Message
+		dataType: string
+		lineageTag: 26234a8b-f579-46e0-bf68-ceec88707c3e
+		summarizeBy: none
+		sourceColumn: Message
+
+		annotation SummarizationSetBy = Automatic
+
+	column clientInfo_s
+		dataType: string
+		lineageTag: 09639607-ad83-4257-a3ba-fc7388fadf4d
+		summarizeBy: none
+		sourceColumn: clientInfo_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column httpStatusCode_d
+		dataType: double
+		lineageTag: 1573116c-bd45-4472-a267-b88deb063389
+		summarizeBy: sum
+		sourceColumn: httpStatusCode_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column identity_claim_appid_g
+		dataType: string
+		lineageTag: 1140f36a-d9a7-412a-910e-8ea495b15f9e
+		summarizeBy: none
+		sourceColumn: identity_claim_appid_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity_claim_http_schemas_microsoft_com_identity_claims_objectidentifier_g
+		dataType: string
+		lineageTag: d5360d32-6cbb-4655-aec2-6e85d3e5f4c6
+		summarizeBy: none
+		sourceColumn: identity_claim_http_schemas_microsoft_com_identity_claims_objectidentifier_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column userAgent_s
+		dataType: string
+		lineageTag: 03b1cac9-b7a6-4fa1-acae-e251920c222a
+		summarizeBy: none
+		sourceColumn: userAgent_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column ruleName_s
+		dataType: string
+		lineageTag: 95b23968-f7b0-4a9c-9ae1-ad938f5880b4
+		summarizeBy: none
+		sourceColumn: ruleName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity_claim_http_schemas_xmlsoap_org_ws_2005_05_identity_claims_upn_s
+		dataType: string
+		lineageTag: 07f0f90b-9781-4dd8-9588-93135e73c0a5
+		summarizeBy: none
+		sourceColumn: identity_claim_http_schemas_xmlsoap_org_ws_2005_05_identity_claims_upn_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column systemId_g
+		dataType: string
+		lineageTag: b683eee8-3c32-4842-aa6e-16cc374d8708
+		summarizeBy: none
+		sourceColumn: systemId_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column isAccessPolicyMatch_b
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7075d57f-54b7-4b7c-b3d7-9eccbead5f98
+		summarizeBy: none
+		sourceColumn: isAccessPolicyMatch_b
+
+		annotation SummarizationSetBy = Automatic
+
+	column EventName_s
+		dataType: string
+		lineageTag: a3ef6413-c68a-4c00-822d-9fa0750f8eda
+		summarizeBy: none
+		sourceColumn: EventName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column httpMethod_s
+		dataType: string
+		lineageTag: 344f63bf-a63a-48df-892e-ed0d74e12dae
+		summarizeBy: none
+		sourceColumn: httpMethod_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column subnetId_s
+		dataType: string
+		lineageTag: 6b54697a-32e9-4f03-8409-fb67ffd613a9
+		summarizeBy: none
+		sourceColumn: subnetId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column type_s
+		dataType: string
+		lineageTag: 7b046270-76f5-4ad1-ab25-7c2b03550cc8
+		summarizeBy: none
+		sourceColumn: type_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column instanceId_s
+		dataType: string
+		lineageTag: 945535ad-aa35-47b6-b98b-6179471d6297
+		summarizeBy: none
+		sourceColumn: instanceId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column macAddress_s
+		dataType: string
+		lineageTag: d71f7f36-a429-4ab5-95aa-74432c5d5eaf
+		summarizeBy: none
+		sourceColumn: macAddress_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column vnetResourceGuid_g
+		dataType: string
+		lineageTag: bce52898-3c0a-444d-aa1f-2e7f49bc2e7a
+		summarizeBy: none
+		sourceColumn: vnetResourceGuid_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column direction_s
+		dataType: string
+		lineageTag: 3d8fdec1-7ec9-43af-8c6a-899433d31413
+		summarizeBy: none
+		sourceColumn: direction_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column subnetPrefix_s
+		dataType: string
+		lineageTag: 3d5ab00a-8d5e-4f60-a6cf-b2f42a8c6008
+		summarizeBy: none
+		sourceColumn: subnetPrefix_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column primaryIPv4Address_s
+		dataType: string
+		lineageTag: 8daf450f-c051-42bb-969c-28a64d958387
+		summarizeBy: none
+		sourceColumn: primaryIPv4Address_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column conditions_sourcePortRange_s
+		dataType: string
+		lineageTag: 3cfdd9eb-163e-4be3-a445-fc6497a4d4de
+		summarizeBy: none
+		sourceColumn: conditions_sourcePortRange_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column priority_d
+		dataType: double
+		lineageTag: 9e40fc00-8747-49a2-a897-1136f2f5df1d
+		summarizeBy: sum
+		sourceColumn: priority_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column conditions_destinationPortRange_s
+		dataType: string
+		lineageTag: 81dabc1c-afd5-4ba6-bef2-1881d9709900
+		summarizeBy: none
+		sourceColumn: conditions_destinationPortRange_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column conditions_destinationIP_s
+		dataType: string
+		lineageTag: c20c8214-4544-4618-8611-ee4de9b4483f
+		summarizeBy: none
+		sourceColumn: conditions_destinationIP_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column conditions_None_s
+		dataType: string
+		lineageTag: 97afdebc-a8ba-47c2-83dc-90a8dc479068
+		summarizeBy: none
+		sourceColumn: conditions_None_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column conditions_sourceIP_s
+		dataType: string
+		lineageTag: 51560ee6-8efa-4557-9120-04723e4cf767
+		summarizeBy: none
+		sourceColumn: conditions_sourceIP_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column httpVersion_s
+		dataType: string
+		lineageTag: a1484618-f94b-4be0-9f82-be78b9e21e27
+		summarizeBy: none
+		sourceColumn: httpVersion_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column matchedConnections_d
+		dataType: double
+		lineageTag: 25ec44be-293c-43e6-8027-71d084324c73
+		summarizeBy: sum
+		sourceColumn: matchedConnections_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column startTime_t
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 83aae09d-9697-41ad-9841-4f5acbdaade7
+		summarizeBy: none
+		sourceColumn: startTime_t
+
+		variation Variation
+			isDefault
+			relationship: c90ef6ac-6f1b-4919-8ee1-7fc72cd689b1
+			defaultHierarchy: LocalDateTable_0e8a211b-a633-47df-a9d6-cddb285868dc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column endTime_t
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 9d6a6764-2b1b-43d5-93d4-e0a74682f019
+		summarizeBy: none
+		sourceColumn: endTime_t
+
+		variation Variation
+			isDefault
+			relationship: 033514d1-9577-42e3-aaa1-7844c4d0e1bf
+			defaultHierarchy: LocalDateTable_cae2b05a-4581-49a1-9368-35ff45e88895.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column DatabaseName_s
+		dataType: string
+		lineageTag: 27efd51d-1e58-44f9-8681-3e02701dc5dd
+		summarizeBy: none
+		sourceColumn: DatabaseName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column clientIP_s
+		dataType: string
+		lineageTag: 209af002-42aa-4ba6-ad7d-ba728ee9edb0
+		summarizeBy: none
+		sourceColumn: clientIP_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column host_s
+		dataType: string
+		lineageTag: 82a4afe0-4f98-46a4-bab2-f8a0f05a6eaa
+		summarizeBy: none
+		sourceColumn: host_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column requestQuery_s
+		dataType: string
+		lineageTag: d7c8a6c8-1d0d-480d-af00-46cdc47a3ffa
+		summarizeBy: none
+		sourceColumn: requestQuery_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column sslEnabled_s
+		dataType: string
+		lineageTag: 63a26158-5b2d-4aa2-a9ea-3a0e1a183cb2
+		summarizeBy: none
+		sourceColumn: sslEnabled_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column clientPort_d
+		dataType: double
+		lineageTag: c836ec22-8c55-42e7-bee2-f36b34acad75
+		summarizeBy: sum
+		sourceColumn: clientPort_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column httpStatus_d
+		dataType: double
+		lineageTag: 03a9f8ae-3149-40fb-8963-1356272a7f18
+		summarizeBy: sum
+		sourceColumn: httpStatus_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column receivedBytes_d
+		dataType: double
+		lineageTag: 38b2c577-8c09-42eb-a93a-8ec1691ff7a2
+		summarizeBy: sum
+		sourceColumn: receivedBytes_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column sentBytes_d
+		dataType: double
+		lineageTag: bbcc7baa-12d4-4173-a726-098faed7ddbd
+		summarizeBy: sum
+		sourceColumn: sentBytes_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column timeTaken_d
+		dataType: double
+		lineageTag: bd2da2a8-f8ef-4050-9b8c-df7278f70869
+		summarizeBy: sum
+		sourceColumn: timeTaken_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column resultDescription_ErrorJobs_s
+		dataType: string
+		lineageTag: 99a014cb-e930-4d77-89ae-c8888cd4c0f9
+		summarizeBy: none
+		sourceColumn: resultDescription_ErrorJobs_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_ChildJobs_s
+		dataType: string
+		lineageTag: ee7e4504-456f-4157-aeb0-e05b2e4a938d
+		summarizeBy: none
+		sourceColumn: resultDescription_ChildJobs_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity_claim_http_schemas_microsoft_com_identity_claims_scope_s
+		dataType: string
+		lineageTag: bb4bacba-0b41-4d22-8206-a9cb9f0049ca
+		summarizeBy: none
+		sourceColumn: identity_claim_http_schemas_microsoft_com_identity_claims_scope_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column workflowId_s
+		dataType: string
+		lineageTag: b5f5be8a-ed19-4fbb-8f25-f6781973e338
+		summarizeBy: none
+		sourceColumn: workflowId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_location_s
+		dataType: string
+		lineageTag: a54b8f54-1fd6-430e-8e62-13f07d10ede9
+		summarizeBy: none
+		sourceColumn: resource_location_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_workflowId_g
+		dataType: string
+		lineageTag: b2248c29-5e42-43dd-bc6c-9c6176d2a55f
+		summarizeBy: none
+		sourceColumn: resource_workflowId_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_resourceGroupName_s
+		dataType: string
+		lineageTag: bd94da65-45ba-4d0a-8275-40e7abfdaaaf
+		summarizeBy: none
+		sourceColumn: resource_resourceGroupName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_subscriptionId_g
+		dataType: string
+		lineageTag: 7edbc867-4b28-4189-b238-057570eea3bf
+		summarizeBy: none
+		sourceColumn: resource_subscriptionId_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_runId_s
+		dataType: string
+		lineageTag: c0e5ce24-ec9b-4c27-9c75-85bde4e7b9e0
+		summarizeBy: none
+		sourceColumn: resource_runId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_workflowName_s
+		dataType: string
+		lineageTag: cdff2fdc-5dff-4a04-bb18-9cdea1f5f401
+		summarizeBy: none
+		sourceColumn: resource_workflowName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column _schema_s
+		dataType: string
+		lineageTag: 470ae664-d158-4b9b-8442-c644df3d9125
+		summarizeBy: none
+		sourceColumn: _schema_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column correlation_clientTrackingId_s
+		dataType: string
+		lineageTag: 43aac198-7ac2-446d-8034-b4b24da87e45
+		summarizeBy: none
+		sourceColumn: correlation_clientTrackingId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties_sku_Family_s
+		dataType: string
+		lineageTag: 55bb7b27-3c0f-4eb8-836d-484723d9f892
+		summarizeBy: none
+		sourceColumn: properties_sku_Family_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties_sku_Name_s
+		dataType: string
+		lineageTag: bec4ead2-d28e-4af2-85c5-e3311c4e9b19
+		summarizeBy: none
+		sourceColumn: properties_sku_Name_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties_tenantId_g
+		dataType: string
+		lineageTag: 2a7b8395-dc36-4b38-bcce-22630e5c94a0
+		summarizeBy: none
+		sourceColumn: properties_tenantId_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties_enabledForDeployment_b
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ce58b13a-4a11-4c8e-b890-6f6fee92ceda
+		summarizeBy: none
+		sourceColumn: properties_enabledForDeployment_b
+
+		annotation SummarizationSetBy = Automatic
+
+	column code_s
+		dataType: string
+		lineageTag: a609ea72-abaa-41b8-baea-00ef63fa310e
+		summarizeBy: none
+		sourceColumn: code_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_MachineId_s
+		dataType: string
+		lineageTag: 0d4b7910-3030-432a-a4ab-c40af61992c5
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_MachineId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_ScheduleName_s
+		dataType: string
+		lineageTag: a75c05aa-a03b-4bef-8e3f-66ccf290d380
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_ScheduleName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_Status_s
+		dataType: string
+		lineageTag: 65c31119-1700-45cc-9a06-414db74bd9cb
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_Status_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_StatusDescription_s
+		dataType: string
+		lineageTag: 1d7387aa-3553-4b22-ab06-aef82ac770a9
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_StatusDescription_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_MachineName_s
+		dataType: string
+		lineageTag: a096344c-0229-4ad9-af4c-3043460811fa
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_MachineName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_TotalUpdatesInstalled_d
+		dataType: double
+		lineageTag: 423440bf-c1c9-4c4f-b3d3-6a7487b77a68
+		summarizeBy: sum
+		sourceColumn: resultDescription_Summary_TotalUpdatesInstalled_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column resultDescription_Summary_RebootRequired_b
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e20ed243-c0ba-4915-9a3e-71c63bbffe01
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_RebootRequired_b
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_TotalUpdatesFailed_d
+		dataType: double
+		lineageTag: 0ad1d24b-d09d-47d2-b53a-eee62077764f
+		summarizeBy: sum
+		sourceColumn: resultDescription_Summary_TotalUpdatesFailed_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column resultDescription_Summary_InstallPercentage_d
+		dataType: double
+		lineageTag: ea19f2cf-a819-4f32-8744-631d08175f5a
+		summarizeBy: sum
+		sourceColumn: resultDescription_Summary_InstallPercentage_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column resultDescription_Summary_StartDateTimeUtc_t
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 682b7f7f-a513-4880-9004-6d561c36d46d
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_StartDateTimeUtc_t
+
+		variation Variation
+			isDefault
+			relationship: c98e3903-4d7b-47e4-9986-337c9595dcc8
+			defaultHierarchy: LocalDateTable_d3219845-dd93-48e9-a498-d3d3bda52c53.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_triggerName_s
+		dataType: string
+		lineageTag: 28ccc64b-d83a-4977-9c1b-1ede6f550f27
+		summarizeBy: none
+		sourceColumn: resource_triggerName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_InitialRequiredUpdatesCount_d
+		dataType: double
+		lineageTag: 3634484f-bc32-4a8c-b335-da0a792e43dd
+		summarizeBy: sum
+		sourceColumn: resultDescription_Summary_InitialRequiredUpdatesCount_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column properties_enabledForTemplateDeployment_b
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6ddd8086-c87d-4bc7-a559-c793aa0f7c3c
+		summarizeBy: none
+		sourceColumn: properties_enabledForTemplateDeployment_b
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_EndDateTimeUtc_s
+		dataType: string
+		lineageTag: d0401735-caaa-4028-a07a-33124c9a7c3d
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_EndDateTimeUtc_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_DurationInMinutes_s
+		dataType: string
+		lineageTag: df264629-8582-400c-a5df-bd6b38f18e38
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_DurationInMinutes_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_originRunId_s
+		dataType: string
+		lineageTag: 6e4103c0-a4cd-41ee-9d8c-2ee2db2a92e5
+		summarizeBy: none
+		sourceColumn: resource_originRunId_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties_enabledForDiskEncryption_b
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 88938ca0-e25c-4aa5-9f61-38ecb5809975
+		summarizeBy: none
+		sourceColumn: properties_enabledForDiskEncryption_b
+
+		annotation SummarizationSetBy = Automatic
+
+	column resource_actionName_s
+		dataType: string
+		lineageTag: 4fd78ae9-88d3-40ca-b920-2f52c8241c44
+		summarizeBy: none
+		sourceColumn: resource_actionName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column correlation_actionTrackingId_g
+		dataType: string
+		lineageTag: e781fae1-0adb-44b0-ae21-89db1e0ce053
+		summarizeBy: none
+		sourceColumn: correlation_actionTrackingId_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_EndDateTimeUtc_t
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: bc734435-e178-4d98-bc54-4f0284005ca1
+		summarizeBy: none
+		sourceColumn: resultDescription_Summary_EndDateTimeUtc_t
+
+		variation Variation
+			isDefault
+			relationship: 80109b0a-0328-4fab-b9c2-1cce77b79df8
+			defaultHierarchy: LocalDateTable_9b17d192-666e-4c2b-b363-29a700cfc972.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column resultDescription_Summary_DurationInMinutes_d
+		dataType: double
+		lineageTag: 4b5663fe-a093-48ac-9cd9-cd0f867508fe
+		summarizeBy: sum
+		sourceColumn: resultDescription_Summary_DurationInMinutes_d
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column conditions_protocols_s
+		dataType: string
+		lineageTag: d2bfbe4b-a50a-4e0d-9404-19dac03b2b33
+		summarizeBy: none
+		sourceColumn: conditions_protocols_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity_claim_ipaddr_s
+		dataType: string
+		lineageTag: 1e9c48ed-67c8-4464-888f-7f8047bf21f7
+		summarizeBy: none
+		sourceColumn: identity_claim_ipaddr_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column ElasticPoolName_s
+		dataType: string
+		lineageTag: e4de106f-7c45-4f9c-85d9-afbb7169287a
+		summarizeBy: none
+		sourceColumn: ElasticPoolName_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity_claim_http_schemas_microsoft_com_claims_authnmethodsreferences_s
+		dataType: string
+		lineageTag: f3943259-7c0a-4e41-9a27-102b6dfe5b17
+		summarizeBy: none
+		sourceColumn: identity_claim_http_schemas_microsoft_com_claims_authnmethodsreferences_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column RunOn_s
+		dataType: string
+		lineageTag: 8f04dfb7-60d4-4ffd-9d94-bc6feb743476
+		summarizeBy: none
+		sourceColumn: RunOn_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column query_hash_s
+		dataType: string
+		lineageTag: 7ed33451-cc4e-4a29-9eed-b3fcb38a3222
+		summarizeBy: none
+		sourceColumn: query_hash_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceSystem
+		dataType: string
+		lineageTag: 95de1ca5-608b-4de4-8d1f-04a3fe7eb81f
+		summarizeBy: none
+		sourceColumn: SourceSystem
+
+		annotation SummarizationSetBy = Automatic
+
+	column MG
+		dataType: string
+		lineageTag: e5b8046f-8670-4c9e-ba0c-6e5c5a88dd68
+		summarizeBy: none
+		sourceColumn: MG
+
+		annotation SummarizationSetBy = Automatic
+
+	column ManagementGroupName
+		dataType: string
+		lineageTag: 79cbb845-d2af-404c-a298-6de12b0e3d9b
+		summarizeBy: none
+		sourceColumn: ManagementGroupName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Computer
+		dataType: string
+		lineageTag: 66bc1353-5f5a-4761-bea2-35497a697472
+		summarizeBy: none
+		sourceColumn: Computer
+
+		annotation SummarizationSetBy = Automatic
+
+	column RawData
+		dataType: string
+		lineageTag: 905077ec-c5c8-41f1-9207-805e85689953
+		summarizeBy: none
+		sourceColumn: RawData
+
+		annotation SummarizationSetBy = Automatic
+
+	column event_s
+		dataType: string
+		lineageTag: 58b0e314-a4da-41b8-a9ff-d02e7a3edae2
+		summarizeBy: none
+		sourceColumn: event_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_s
+		dataType: string
+		lineageTag: 06e42600-945c-4d76-bba0-1fa96e728f2e
+		summarizeBy: none
+		sourceColumn: location_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column Tenant_s
+		dataType: string
+		lineageTag: 52abc067-6f41-495a-ab7d-24f8b3f2de0b
+		summarizeBy: none
+		sourceColumn: Tenant_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties_s
+		dataType: string
+		lineageTag: 5168fb55-a52e-4c87-800b-3078bcce1a6d
+		summarizeBy: none
+		sourceColumn: properties_s
+
+		annotation SummarizationSetBy = Automatic
+
+	column AssetIdentity_g
+		dataType: string
+		lineageTag: 5e2c64c0-f458-44e4-a752-3061582a203a
+		summarizeBy: none
+		sourceColumn: AssetIdentity_g
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdditionalFields
+		dataType: string
+		lineageTag: abff7982-a278-4d76-b540-7e4a21b23327
+		summarizeBy: none
+		sourceColumn: AdditionalFields
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: 7bbdbcc9-a6f9-4006-9a6a-31bf5e344c14
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column _ResourceId
+		dataType: string
+		lineageTag: 32961df2-1b7e-4232-bac0-160045c5697e
+		summarizeBy: none
+		sourceColumn: _ResourceId
+
+		annotation SummarizationSetBy = Automatic
+
+	column properties
+		dataType: string
+		lineageTag: 447e6573-8de8-437f-a112-67c9a6e4ff48
+		summarizeBy: none
+		sourceColumn: properties
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelDeploymentName
+		dataType: string
+		lineageTag: 9a00917a-e190-479a-80fa-d8eb46282f00
+		summarizeBy: none
+		sourceColumn: modelDeploymentName
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelName
+		dataType: string
+		lineageTag: 10932921-9fc4-4e82-9a14-ceabe6a7f345
+		summarizeBy: none
+		sourceColumn: modelName
+
+		annotation SummarizationSetBy = Automatic
+
+	column modelVersion
+		dataType: string
+		lineageTag: af43b2ed-bf08-4c08-ac3a-2e956e302739
+		summarizeBy: none
+		sourceColumn: modelVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column streamType
+		dataType: string
+		lineageTag: ee2ab226-83ba-4fc2-89b6-ae6bac5f930f
+		summarizeBy: none
+		sourceColumn: streamType
+
+		annotation SummarizationSetBy = Automatic
+
+	column apiVersion
+		dataType: string
+		lineageTag: a256cfe0-11f1-4202-ba48-d22c5ad1fc74
+		summarizeBy: none
+		sourceColumn: apiVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 8fe8fd4b-cb8f-494d-bebe-93b42e12e061
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	partition OpenAI_Insights = m
+		mode: import
+		queryGroup: 'Log Analytics\Azure Diagnostics'
+		source = ```
+				/*
+				The exported Power Query Formula Language (M Language ) can be used with Power Query in Excel
+				and Power BI Desktop.
+				For Power BI Desktop follow the instructions below: 
+				1) Download Power BI Desktop from https://powerbi.microsoft.com/desktop/
+				2) In Power BI Desktop select: 'Get Data' -> 'Blank Query'->'Advanced Query Editor'
+				3) Paste the M Language script into the Advanced Query Editor and select 'Done'
+				*/
+				
+				
+				let AnalyticsQuery =
+				let Source = Json.Document(Web.Contents("https://api.loganalytics.io/v1/workspaces/" & LogAnalyticsWorskspaceId & "/query", 
+				[Query=[#"query"="AzureDiagnostics
+				| where ResourceProvider == ""MICROSOFT.COGNITIVESERVICES""
+				    and Category == ""RequestResponse""
+				| extend properties = parse_json(properties_s)
+				| extend modelDeploymentName=tostring(properties.modelDeploymentName),
+				        modelName=tostring(properties.modelName),
+				        modelVersion=properties.modelVersion,
+				        streamType=properties.streamType,
+				        apiName=tostring(properties.apiName)
+				| extend apiVersion = replace_string(apiName, 'Azure OpenAI API version ', '')
+				| extend Location = location_s
+				| where OperationName !has ""_List""
+				    and ResultSignature == 200
+				| project-away apiName
+				",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="P7D",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
+				TypeMap = #table(
+				{ "AnalyticsTypes", "Type" }, 
+				{ 
+				{ "string",   Text.Type },
+				{ "int",      Int32.Type },
+				{ "long",     Int64.Type },
+				{ "real",     Double.Type },
+				{ "timespan", Duration.Type },
+				{ "datetime", DateTimeZone.Type },
+				{ "bool",     Logical.Type },
+				{ "guid",     Text.Type },
+				{ "dynamic",  Text.Type }
+				}),
+				DataTable = Source[tables]{0},
+				Columns = Table.FromRecords(DataTable[columns]),
+				ColumnsWithType = Table.Join(Columns, {"type"}, TypeMap , {"AnalyticsTypes"}),
+				Rows = Table.FromRows(DataTable[rows], Columns[name]), 
+				Table = Table.TransformColumnTypes(Rows, Table.ToList(ColumnsWithType, (c) => { c{0}, c{3}}))
+				in
+				Table
+				in AnalyticsQuery
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

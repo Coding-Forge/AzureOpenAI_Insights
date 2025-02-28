@@ -1,0 +1,125 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "26896485ed50e639b27b",
+  "position": {
+    "x": 60,
+    "y": 172,
+    "z": 2000,
+    "height": 240,
+    "width": 1160,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "areaChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OpenAI_Insights"
+                    }
+                  },
+                  "Property": "TimeGenerated"
+                }
+              },
+              "queryRef": "OpenAI_Insights.TimeGenerated",
+              "nativeQueryRef": "TimeGenerated",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "OpenAI_Insights"
+                        }
+                      },
+                      "Property": "DurationMs"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Avg(OpenAI_Insights.DurationMs)",
+              "nativeQueryRef": "Average of DurationMs"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "OpenAI_Insights"
+                  }
+                },
+                "Property": "TimeGenerated"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Avg(OpenAI_Insights.DurationMs)"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Operation Duration Over Time'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "howCreated": "Copilot"
+}

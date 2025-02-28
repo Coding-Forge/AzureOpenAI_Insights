@@ -1,0 +1,34 @@
+table Cognitive_Services
+	lineageTag: 80abd219-e2eb-42ef-bbd0-42591ef32a1c
+
+	column resourceGroup
+		dataType: string
+		lineageTag: 3e3d4f91-5624-456e-be07-cb3a0d4339ab
+		summarizeBy: none
+		sourceColumn: resourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column count_type
+		dataType: int64
+		formatString: 0
+		lineageTag: 0df492c3-50d7-4d17-9f5e-b96ee61f3132
+		summarizeBy: none
+		sourceColumn: count_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Cognitive_Services = m
+		mode: import
+		queryGroup: 'Azure Resource Graph'
+		source =
+				let
+				    Source = AzureResourceGraph.Query("resources#(lf)| where type =~ ""microsoft.cognitiveservices/accounts""#(lf)| summarize count(type) by resourceGroup", "Tenant", null, null, [resultTruncated=null]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"resourceGroup", type text}, {"count_type", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

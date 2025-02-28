@@ -1,0 +1,59 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "0efd6a0f22fc9dfd6405",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 5002,
+    "height": 65.176983449499,
+    "width": 355.07877441758313,
+    "tabOrder": 5001
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "OpenAI_Insights"
+                    }
+                  },
+                  "Property": "SubscriptionId"
+                }
+              },
+              "queryRef": "OpenAI_Insights.SubscriptionId",
+              "nativeQueryRef": "SubscriptionId",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Basic'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

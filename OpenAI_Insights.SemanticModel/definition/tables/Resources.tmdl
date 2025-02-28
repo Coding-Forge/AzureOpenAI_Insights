@@ -1,0 +1,313 @@
+table Resources
+	lineageTag: 4fe7a505-3079-472a-9e23-7961587e7ef4
+
+	column id
+		dataType: string
+		lineageTag: 7b11fbdf-ca3b-4699-890b-03d4283a851a
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: ae369d67-9d41-4bb3-ab3f-e0fc142e84cd
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column type
+		dataType: string
+		lineageTag: 2d7707d2-e459-4fc5-8030-63da5b584f6a
+		summarizeBy: none
+		sourceColumn: type
+
+		annotation SummarizationSetBy = Automatic
+
+	column tenantId
+		dataType: string
+		lineageTag: 71743efd-901f-4d60-9015-422b3ccca148
+		summarizeBy: none
+		sourceColumn: tenantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column kind
+		dataType: string
+		lineageTag: 6053214b-44d2-4793-9a4b-b311099b3f03
+		summarizeBy: none
+		sourceColumn: kind
+
+		annotation SummarizationSetBy = Automatic
+
+	column location
+		dataType: string
+		lineageTag: 6b84dc81-077f-4139-b0f0-b52347b9df5e
+		summarizeBy: none
+		sourceColumn: location
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscriptionId
+		dataType: string
+		lineageTag: a0492b84-ea2b-4432-8a82-4ae8975b88fa
+		summarizeBy: none
+		sourceColumn: subscriptionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column managedBy
+		dataType: string
+		lineageTag: 86ee18c0-e907-490f-8957-e536809f0cb9
+		summarizeBy: none
+		sourceColumn: managedBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'sku.name'
+		dataType: string
+		lineageTag: 872abc16-fec1-479c-a675-597f9f39432d
+		summarizeBy: none
+		sourceColumn: sku.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column plan
+		dataType: string
+		lineageTag: 10a8d0d8-107a-40a4-b284-5544d700022c
+		summarizeBy: none
+		sourceColumn: plan
+
+		annotation SummarizationSetBy = Automatic
+
+	column provisioningState
+		dataType: string
+		lineageTag: e6e8e28f-1ea8-467b-9ee8-fce7c68ba26f
+		summarizeBy: none
+		sourceColumn: provisioningState
+
+		annotation SummarizationSetBy = Automatic
+
+	column publicNetworkAccess
+		dataType: string
+		lineageTag: 3c7e6bf2-3b35-4304-9a49-578b74169541
+		summarizeBy: none
+		sourceColumn: publicNetworkAccess
+
+		annotation SummarizationSetBy = Automatic
+
+	column privateEndpointConnections
+		dataType: string
+		lineageTag: 69b8d3ba-7208-40ee-9a2e-abd7f35a4f16
+		summarizeBy: none
+		sourceColumn: privateEndpointConnections
+
+		annotation SummarizationSetBy = Automatic
+
+	column endpoint
+		dataType: string
+		lineageTag: 2ee19819-4858-4dbb-a5e7-7f4748e821a4
+		summarizeBy: none
+		sourceColumn: endpoint
+
+		annotation SummarizationSetBy = Automatic
+
+	column networkAcls
+		dataType: string
+		lineageTag: 7fa0bac0-55d3-4fda-9b8c-37be3fe9b1f5
+		summarizeBy: none
+		sourceColumn: networkAcls
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpenAI Language Model Instance API'
+		dataType: string
+		lineageTag: 9a2ea41d-d830-465b-82f8-e9c917785733
+		summarizeBy: none
+		sourceColumn: OpenAI Language Model Instance API
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpenAI Model Scaleset API'
+		dataType: string
+		lineageTag: 73dd587a-56e8-427a-8d43-e6813b8e852d
+		summarizeBy: none
+		sourceColumn: OpenAI Model Scaleset API
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpenAI Realtime API'
+		dataType: string
+		lineageTag: 209ddb89-ea19-46e1-9277-240d16ff7632
+		summarizeBy: none
+		sourceColumn: OpenAI Realtime API
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpenAI Whisper API'
+		dataType: string
+		lineageTag: fcaaf2c0-0fae-4df8-94ff-9c929f4e5575
+		summarizeBy: none
+		sourceColumn: OpenAI Whisper API
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Token Service API'
+		dataType: string
+		lineageTag: fe05ecb8-0608-47f0-b1f5-22a94805cd56
+		summarizeBy: none
+		sourceColumn: Token Service API
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpenAI Dall-E API'
+		dataType: string
+		lineageTag: 61440b58-9868-43e4-8326-b9b4e5a1034d
+		summarizeBy: none
+		sourceColumn: OpenAI Dall-E API
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'OpenAI Sora API'
+		dataType: string
+		lineageTag: 485e5365-f09e-40f8-8b71-0ced96d4edee
+		summarizeBy: none
+		sourceColumn: OpenAI Sora API
+
+		annotation SummarizationSetBy = Automatic
+
+	column internalId
+		dataType: string
+		lineageTag: c53ec72c-e517-4e26-9c3f-fdcebcbac0b2
+		summarizeBy: none
+		sourceColumn: internalId
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'capabilities.name'
+		dataType: string
+		lineageTag: 8608b8cf-e9bf-4696-9a40-a53b6311cdba
+		summarizeBy: none
+		sourceColumn: capabilities.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column customSubDomainName
+		dataType: string
+		lineageTag: dbd76b71-c44f-4d18-8c34-51d16b2d58f0
+		summarizeBy: none
+		sourceColumn: customSubDomainName
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'rules.renewalPeriod'
+		dataType: string
+		lineageTag: c2ec1f39-e580-4d91-9b8f-c7cede298af1
+		summarizeBy: none
+		sourceColumn: rules.renewalPeriod
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'rules.matchPatterns'
+		dataType: string
+		lineageTag: c10a5c58-998e-4e32-b123-437dba40dcdb
+		summarizeBy: none
+		sourceColumn: rules.matchPatterns
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'rules.count'
+		dataType: string
+		lineageTag: 7fa36a76-69c4-449f-be16-7a7a00384486
+		summarizeBy: none
+		sourceColumn: rules.count
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'rules.key'
+		dataType: string
+		lineageTag: adf74bf6-9ffb-42d9-94da-2dfaa1363ecb
+		summarizeBy: none
+		sourceColumn: rules.key
+
+		annotation SummarizationSetBy = Automatic
+
+	column isMigrated
+		dataType: string
+		lineageTag: 6533b551-0ebe-4184-8551-98e237151dfc
+		summarizeBy: none
+		sourceColumn: isMigrated
+
+		annotation SummarizationSetBy = Automatic
+
+	column dateCreated
+		dataType: string
+		lineageTag: 428284c8-ea7e-4ecc-b9b5-db30a6607415
+		summarizeBy: none
+		sourceColumn: dateCreated
+
+		annotation SummarizationSetBy = Automatic
+
+	column apiProperties
+		dataType: string
+		lineageTag: 0818a030-2135-416b-8dd8-976f5d6dd652
+		summarizeBy: none
+		sourceColumn: apiProperties
+
+		annotation SummarizationSetBy = Automatic
+
+	column tags
+		dataType: string
+		lineageTag: 61647cec-b9ee-4b1f-a4ae-f87be8f239b7
+		summarizeBy: none
+		sourceColumn: tags
+
+		annotation SummarizationSetBy = Automatic
+
+	column identity
+		dataType: string
+		lineageTag: 8b3aea60-fc6b-4cc2-9cdd-9a22c60a7069
+		summarizeBy: none
+		sourceColumn: identity
+
+		annotation SummarizationSetBy = Automatic
+
+	column zones
+		dataType: string
+		lineageTag: 8466419c-dfba-421b-9a54-99ca8cf49d1a
+		summarizeBy: none
+		sourceColumn: zones
+
+		annotation SummarizationSetBy = Automatic
+
+	column extendedLocation
+		dataType: string
+		lineageTag: b983e92c-c3f5-48d3-bca6-427c5797423e
+		summarizeBy: none
+		sourceColumn: extendedLocation
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Resources = m
+		mode: import
+		queryGroup: 'Azure Resource Graph'
+		source =
+				let
+				    Source = AzureResourceGraph.Query("resources#(lf)| where type =~ ""microsoft.cognitiveservices/accounts""#(lf)| project-away resourceGroup", "Tenant", null, null, [resultTruncated=null]),
+				    #"Expanded sku" = Table.ExpandRecordColumn(Source, "sku", {"name"}, {"sku.name"}),
+				    #"Expanded properties" = Table.ExpandRecordColumn(#"Expanded sku", "properties", {"provisioningState", "publicNetworkAccess", "privateEndpointConnections", "endpoint", "networkAcls", "endpoints", "internalId", "capabilities", "customSubDomainName", "callRateLimit", "isMigrated", "dateCreated", "apiProperties"}, {"provisioningState", "publicNetworkAccess", "privateEndpointConnections", "endpoint", "networkAcls", "endpoints", "internalId", "capabilities", "customSubDomainName", "callRateLimit", "isMigrated", "dateCreated", "apiProperties"}),
+				    #"Expanded endpoints" = Table.ExpandRecordColumn(#"Expanded properties", "endpoints", {"OpenAI Language Model Instance API", "OpenAI Model Scaleset API", "OpenAI Realtime API", "OpenAI Whisper API", "Token Service API", "OpenAI Dall-E API", "OpenAI Sora API"}, {"OpenAI Language Model Instance API", "OpenAI Model Scaleset API", "OpenAI Realtime API", "OpenAI Whisper API", "Token Service API", "OpenAI Dall-E API", "OpenAI Sora API"}),
+				    #"Expanded capabilities" = Table.ExpandListColumn(#"Expanded endpoints", "capabilities"),
+				    #"Expanded capabilities1" = Table.ExpandRecordColumn(#"Expanded capabilities", "capabilities", {"name"}, {"name.1"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Expanded capabilities1",{{"name.1", "capabilities.name"}}),
+				    #"Expanded callRateLimit" = Table.ExpandRecordColumn(#"Renamed Columns", "callRateLimit", {"rules"}, {"rules"}),
+				    #"Expanded rules" = Table.ExpandListColumn(#"Expanded callRateLimit", "rules"),
+				    #"Expanded rules1" = Table.ExpandRecordColumn(#"Expanded rules", "rules", {"renewalPeriod", "matchPatterns", "count", "key"}, {"rules.renewalPeriod", "rules.matchPatterns", "rules.count", "rules.key"})
+				in
+				    #"Expanded rules1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

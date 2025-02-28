@@ -1,0 +1,390 @@
+table AzureOpenAITTLTInMS
+	lineageTag: 9b75f19f-2816-48fa-a8ed-841161943480
+
+	column TenantId
+		dataType: string
+		lineageTag: fb917a22-7355-4e7b-a20d-005cac72d1a7
+		summarizeBy: none
+		sourceColumn: TenantId
+
+		annotation SummarizationSetBy = Automatic
+
+	column SourceSystem
+		dataType: string
+		lineageTag: ace71737-e777-48b8-a7f6-ea886d539ddf
+		summarizeBy: none
+		sourceColumn: SourceSystem
+
+		annotation SummarizationSetBy = Automatic
+
+	column TimeGenerated
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b0b2b195-1387-43e1-85d1-401f71836195
+		summarizeBy: none
+		sourceColumn: TimeGenerated
+
+		variation Variation
+			isDefault
+			relationship: 3fa23a93-02c7-4c34-9c3d-a8a53f378f30
+			defaultHierarchy: LocalDateTable_30a0bba1-a959-4b66-afc7-aea73e6980ba.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceId
+		dataType: string
+		lineageTag: 5e6ec34c-3ef5-4b50-b97c-ce8c3718ecfe
+		summarizeBy: none
+		sourceColumn: ResourceId
+
+		annotation SummarizationSetBy = Automatic
+
+	column OperationName
+		dataType: string
+		lineageTag: 3f66c25e-7a07-442d-9074-9ab5afc3594f
+		summarizeBy: none
+		sourceColumn: OperationName
+
+		annotation SummarizationSetBy = Automatic
+
+	column OperationVersion
+		dataType: string
+		lineageTag: bff9499c-7049-45fa-8129-70ece9896afa
+		summarizeBy: none
+		sourceColumn: OperationVersion
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: f34f8aac-9edd-44aa-a6ac-dbadaf3ee4ea
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResultType
+		dataType: string
+		lineageTag: 9a90e8e7-8866-4a58-b2c6-622f81d0de61
+		summarizeBy: none
+		sourceColumn: ResultType
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResultSignature
+		dataType: string
+		lineageTag: efbea873-a783-4336-9551-b1074cdcfa9c
+		summarizeBy: none
+		sourceColumn: ResultSignature
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResultDescription
+		dataType: string
+		lineageTag: 8b03556a-2798-487c-b88a-6276d5bccfaf
+		summarizeBy: none
+		sourceColumn: ResultDescription
+
+		annotation SummarizationSetBy = Automatic
+
+	column DurationMs
+		dataType: int64
+		formatString: 0
+		lineageTag: e566d9af-2d2f-4bf0-9beb-894e1dfedf3d
+		summarizeBy: sum
+		sourceColumn: DurationMs
+
+		annotation SummarizationSetBy = Automatic
+
+	column CallerIpAddress
+		dataType: string
+		lineageTag: daa4ad7d-7a0c-4273-bab5-f8a7e5ee5a66
+		summarizeBy: none
+		sourceColumn: CallerIpAddress
+
+		annotation SummarizationSetBy = Automatic
+
+	column CorrelationId
+		dataType: string
+		lineageTag: 1eef051a-1fac-4dfd-948a-44aa2bbf70e4
+		summarizeBy: none
+		sourceColumn: CorrelationId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Resource
+		dataType: string
+		lineageTag: b10c7aea-3198-42f4-b3b8-49548c37e37d
+		summarizeBy: none
+		sourceColumn: Resource
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceGroup
+		dataType: string
+		lineageTag: 20cc0338-f3b5-4d44-ac1a-323a80e49c26
+		summarizeBy: none
+		sourceColumn: ResourceGroup
+
+		annotation SummarizationSetBy = Automatic
+
+	column ResourceProvider
+		dataType: string
+		lineageTag: f9f5735e-0058-4064-a913-d79893c7a5d5
+		summarizeBy: none
+		sourceColumn: ResourceProvider
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubscriptionId
+		dataType: string
+		lineageTag: 5ac49570-fd8c-49ed-8732-cae5e0eca4fa
+		summarizeBy: none
+		sourceColumn: SubscriptionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column MetricName
+		dataType: string
+		lineageTag: 221a7595-6360-4103-9fb8-f31b319a90c1
+		summarizeBy: none
+		sourceColumn: MetricName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Total
+		dataType: double
+		lineageTag: 5e273baf-1556-4b75-9b6c-8cd04c668725
+		summarizeBy: sum
+		sourceColumn: Total
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Count
+		dataType: double
+		lineageTag: 078dc790-1e26-4d6d-8c1b-09b13122b601
+		summarizeBy: sum
+		sourceColumn: Count
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Maximum
+		dataType: double
+		lineageTag: 35fa8994-3779-4c71-9761-fbc1afb6a7aa
+		summarizeBy: sum
+		sourceColumn: Maximum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Minimum
+		dataType: double
+		lineageTag: 6bf17531-8942-44d2-951d-c087db370899
+		summarizeBy: sum
+		sourceColumn: Minimum
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Average
+		dataType: double
+		lineageTag: eb8f7494-318d-47ea-b3ce-b720fdc7ff13
+		summarizeBy: sum
+		sourceColumn: Average
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column TimeGrain
+		dataType: string
+		lineageTag: c2cddc37-754a-4691-ac55-c606ca15a9fe
+		summarizeBy: none
+		sourceColumn: TimeGrain
+
+		annotation SummarizationSetBy = Automatic
+
+	column UnitName
+		dataType: string
+		lineageTag: f3e1d4cf-dd70-4615-a750-69d36e41df89
+		summarizeBy: none
+		sourceColumn: UnitName
+
+		annotation SummarizationSetBy = Automatic
+
+	column RemoteIPCountry
+		dataType: string
+		lineageTag: 72131d0c-f30c-41cb-8faf-91f96a809dc5
+		summarizeBy: none
+		sourceColumn: RemoteIPCountry
+
+		annotation SummarizationSetBy = Automatic
+
+	column RemoteIPLatitude
+		dataType: double
+		lineageTag: 2cc31ff5-ae71-432d-b72b-6f2c5cb21937
+		summarizeBy: sum
+		sourceColumn: RemoteIPLatitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column RemoteIPLongitude
+		dataType: double
+		lineageTag: 05e0a3dd-9297-46f4-9235-687193723e6f
+		summarizeBy: sum
+		sourceColumn: RemoteIPLongitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column MaliciousIP
+		dataType: string
+		lineageTag: 8adfcc48-20da-4f34-911b-eff79da5b4a4
+		summarizeBy: none
+		sourceColumn: MaliciousIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column IndicatorThreatType
+		dataType: string
+		lineageTag: b06a073c-fb42-4d6a-8e19-f0529fd9bd78
+		summarizeBy: none
+		sourceColumn: IndicatorThreatType
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 31c73b56-2908-4cea-8fa1-ecf372a18c78
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column TLPLevel
+		dataType: string
+		lineageTag: e5459814-a5f6-4dfa-a450-ad20dc020087
+		summarizeBy: none
+		sourceColumn: TLPLevel
+
+		annotation SummarizationSetBy = Automatic
+
+	column Confidence
+		dataType: string
+		lineageTag: b8f48bc8-8f06-4bef-80b9-204bc742a1c1
+		summarizeBy: none
+		sourceColumn: Confidence
+
+		annotation SummarizationSetBy = Automatic
+
+	column Severity
+		dataType: int64
+		formatString: 0
+		lineageTag: 12b05d59-da7e-430d-8900-0df2c3fefc22
+		summarizeBy: sum
+		sourceColumn: Severity
+
+		annotation SummarizationSetBy = Automatic
+
+	column FirstReportedDateTime
+		dataType: string
+		lineageTag: 028b6c7e-e3ad-4c03-81c7-3bb3488fa1b4
+		summarizeBy: none
+		sourceColumn: FirstReportedDateTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column LastReportedDateTime
+		dataType: string
+		lineageTag: 529bdbe5-4e06-4964-b236-29dd5806522f
+		summarizeBy: none
+		sourceColumn: LastReportedDateTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column IsActive
+		dataType: string
+		lineageTag: 4e424b42-097e-4950-84fd-473d43a75d4b
+		summarizeBy: none
+		sourceColumn: IsActive
+
+		annotation SummarizationSetBy = Automatic
+
+	column ReportReferenceLink
+		dataType: string
+		lineageTag: c663c178-52b2-4ec4-8bb8-395359aebb9d
+		summarizeBy: none
+		sourceColumn: ReportReferenceLink
+
+		annotation SummarizationSetBy = Automatic
+
+	column AdditionalInformation
+		dataType: string
+		lineageTag: 22759486-1bf4-47b2-927b-6e77e019f480
+		summarizeBy: none
+		sourceColumn: AdditionalInformation
+
+		annotation SummarizationSetBy = Automatic
+
+	column Type
+		dataType: string
+		lineageTag: 4b74999e-dd4a-4dd4-98ee-0ef9e71665e2
+		summarizeBy: none
+		sourceColumn: Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column _ResourceId
+		dataType: string
+		lineageTag: bff26241-2301-4b08-bb0a-fdac289cc542
+		summarizeBy: none
+		sourceColumn: _ResourceId
+
+		annotation SummarizationSetBy = Automatic
+
+	partition AzureOpenAITTLTInMS = m
+		mode: import
+		queryGroup: 'Log Analytics\Azure Metrics'
+		source = ```
+				let AnalyticsQuery =
+				let Source = Json.Document(Web.Contents("https://api.loganalytics.io/v1/workspaces/" & LogAnalyticsWorskspaceId & "/query", 
+				[Query=[#"query"="AzureMetrics
+				
+				",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="P1D",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
+				TypeMap = #table(
+				{ "AnalyticsTypes", "Type" }, 
+				{ 
+				{ "string",   Text.Type },
+				{ "int",      Int32.Type },
+				{ "long",     Int64.Type },
+				{ "real",     Double.Type },
+				{ "timespan", Duration.Type },
+				{ "datetime", DateTimeZone.Type },
+				{ "bool",     Logical.Type },
+				{ "guid",     Text.Type },
+				{ "dynamic",  Text.Type }
+				}),
+				DataTable = Source[tables]{0},
+				Columns = Table.FromRecords(DataTable[columns]),
+				ColumnsWithType = Table.Join(Columns, {"type"}, TypeMap , {"AnalyticsTypes"}),
+				Rows = Table.FromRows(DataTable[rows], Columns[name]), 
+				Table = Table.TransformColumnTypes(Rows, Table.ToList(ColumnsWithType, (c) => { c{0}, c{3}}))
+				in
+				Table,
+				    #"Filtered Rows" = Table.SelectRows(AnalyticsQuery, each ([MetricName] = "AzureOpenAITTLTInMS"))
+				in #"Filtered Rows"
+				```
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

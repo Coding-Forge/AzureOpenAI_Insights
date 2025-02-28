@@ -1,0 +1,43 @@
+table OpenAI
+	lineageTag: abe8012a-e8f3-4b2b-ae76-8b7749afa6ae
+
+	column value
+		dataType: string
+		lineageTag: 1ee6c10a-134f-486d-839f-a06bbff26fcc
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	column SubscriptionId
+		dataType: string
+		lineageTag: 616f65c6-4168-4e84-8612-7ff7dd0c23d1
+		summarizeBy: none
+		sourceColumn: SubscriptionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column selected
+		dataType: int64
+		formatString: 0
+		lineageTag: 3703734d-d943-4370-a2f1-0f201b6660f4
+		summarizeBy: sum
+		sourceColumn: selected
+
+		annotation SummarizationSetBy = Automatic
+
+	partition OpenAI = m
+		mode: import
+		queryGroup: 'Azure Resource Graph'
+		source =
+				let
+				    Source = AzureResourceGraph.Query("Resources#(lf)| where type =~ ""microsoft.cognitiveservices/accounts""#(lf)| where kind =~ ""OpenAI""#(lf)| summarize Count = count() by subscriptionId#(lf)| order by Count desc#(lf)| extend Rank = row_number()#(lf)| project value = subscriptionId, label = subscriptionId, selected = Rank == 1", "Tenant", null, null, [resultTruncated=null]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"value", type text}, {"label", type text}, {"selected", Int64.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"label", "SubscriptionId"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

@@ -1,0 +1,133 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "200f62e0c92d0d95a138",
+  "position": {
+    "x": 554.346802349184,
+    "y": 323.00522341606,
+    "z": 4003,
+    "height": 374.13732442014668,
+    "width": 725.82640937508461,
+    "tabOrder": 4002
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AzureMetrics"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "AzureMetrics.Date",
+              "nativeQueryRef": "Date",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "AzureMetrics"
+                        }
+                      },
+                      "Property": "Average"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.Average)",
+              "nativeQueryRef": "Sum of Average"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "AzureMetrics"
+                        }
+                      },
+                      "Property": "Minimum"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.Minimum)",
+              "nativeQueryRef": "Sum of Minimum"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "AzureMetrics"
+                        }
+                      },
+                      "Property": "Maximum"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.Maximum)",
+              "nativeQueryRef": "Sum of Maximum"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "AzureMetrics"
+                  }
+                },
+                "Property": "Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Average, Maximum, and Minimum'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

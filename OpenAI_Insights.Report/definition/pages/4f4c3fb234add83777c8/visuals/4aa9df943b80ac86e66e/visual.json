@@ -1,0 +1,138 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "4aa9df943b80ac86e66e",
+  "position": {
+    "x": 0,
+    "y": 323.00522341606,
+    "z": 2000,
+    "height": 273.743809034074,
+    "width": 568.688733118623,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "datedim"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "datedim.Date",
+              "nativeQueryRef": "Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AzureMetrics"
+                    }
+                  },
+                  "Property": "Time"
+                }
+              },
+              "queryRef": "AzureMetrics.Time",
+              "nativeQueryRef": "Time"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AzureMetrics"
+                    }
+                  },
+                  "Property": "Average"
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.Average)",
+              "nativeQueryRef": "Average"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AzureMetrics"
+                    }
+                  },
+                  "Property": "DurationMs"
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.DurationMs)",
+              "nativeQueryRef": "DurationMs"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AzureMetrics"
+                    }
+                  },
+                  "Property": "Maximum"
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.Maximum)",
+              "nativeQueryRef": "Maximum"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "AzureMetrics"
+                    }
+                  },
+                  "Property": "Minimum"
+                }
+              },
+              "queryRef": "Sum(AzureMetrics.Minimum)",
+              "nativeQueryRef": "Minimum"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "datedim"
+                  }
+                },
+                "Property": "Date"
+              }
+            },
+            "direction": "Ascending"
+          },
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "AzureMetrics"
+                  }
+                },
+                "Property": "Time"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

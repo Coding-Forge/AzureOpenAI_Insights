@@ -1,0 +1,70 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+queryGroup 'Log Analytics\Azure Metrics'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup 'Log Analytics\Azure Diagnostics'
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup 'Azure Resource Graph'
+
+	annotation PBI_QueryGroupOrder = 2
+
+queryGroup 'Log Analytics'
+
+	annotation PBI_QueryGroupOrder = 3
+
+annotation PBI_QueryOrder = ["OpenAI","Subscriptions","OpenAI_NoResults","Cognitive_Services","Resources","OpenAI_By_ResourceGroup","OpenAI_By_SubscriptionId","OpenAI_By_Region","Cognitive_Services_Kind","OpenAI_Public_Network","OpenAI_Private_Network","OpenAI_Private_Network_Endpoints","Operational_Insights","OpenAI_Models","OpenAI_Insights","AzureOpenAINormalizedTTFTInMS","AzureOpenAITTLTInMS","GeneratedTokens","ProcessedPromptTokens","TokenTransaction","LogAnalyticsWorskspaceId","AzureMetrics","MetricName","TimeSpanInDays"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.140.829.0 (25.02)+64e0b2e37258cf248e8119ae244f4e8e75927166
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table OpenAI
+ref table Subscriptions
+ref table OpenAI_NoResults
+ref table Cognitive_Services
+ref table Resources
+ref table OpenAI_By_ResourceGroup
+ref table OpenAI_By_SubscriptionId
+ref table OpenAI_By_Region
+ref table Cognitive_Services_Kind
+ref table OpenAI_Public_Network
+ref table OpenAI_Private_Network
+ref table OpenAI_Private_Network_Endpoints
+ref table Operational_Insights
+ref table OpenAI_Models
+ref table OpenAI_Insights
+ref table DateTableTemplate_fbf42afc-0859-4bb3-a781-98c8aa83ca81
+ref table LocalDateTable_b17b2a03-4623-4be5-84c5-1f2d2512ca9e
+ref table LocalDateTable_0e8a211b-a633-47df-a9d6-cddb285868dc
+ref table LocalDateTable_cae2b05a-4581-49a1-9368-35ff45e88895
+ref table LocalDateTable_d3219845-dd93-48e9-a498-d3d3bda52c53
+ref table LocalDateTable_9b17d192-666e-4c2b-b363-29a700cfc972
+ref table AzureOpenAINormalizedTTFTInMS
+ref table LocalDateTable_e2e58aa5-b6e7-438c-8bad-bade732bf3a3
+ref table AzureOpenAITTLTInMS
+ref table LocalDateTable_30a0bba1-a959-4b66-afc7-aea73e6980ba
+ref table GeneratedTokens
+ref table LocalDateTable_f3d07a22-742b-4d69-aa95-4a9f69a09119
+ref table ProcessedPromptTokens
+ref table LocalDateTable_748cb65e-b8ca-46c4-a645-1eaa9ef43eae
+ref table TokenTransaction
+ref table LocalDateTable_ac9add13-46da-4f8e-b6e3-e6f14993bb7e
+ref table AzureMetrics
+ref table LocalDateTable_34fd4517-e0ab-4cd2-8d37-8f939b4e2d08
+ref table MetricName
+ref table datedim
+
+ref cultureInfo en-US
+

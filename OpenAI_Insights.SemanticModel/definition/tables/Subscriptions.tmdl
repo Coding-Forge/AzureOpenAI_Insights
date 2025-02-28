@@ -1,0 +1,41 @@
+table Subscriptions
+	lineageTag: 64186025-11e8-4f60-ac63-3593a0fbfe4b
+
+	column value
+		dataType: string
+		lineageTag: 168c25c6-0fdb-4934-851b-a32b8eaaa867
+		summarizeBy: none
+		sourceColumn: value
+
+		annotation SummarizationSetBy = Automatic
+
+	column label
+		dataType: string
+		lineageTag: 168b1423-698f-42e4-94ce-f5cbbb198d0e
+		summarizeBy: none
+		sourceColumn: label
+
+		annotation SummarizationSetBy = Automatic
+
+	column selected
+		dataType: string
+		lineageTag: 8a58d566-3f45-45d3-8240-401ba5407a6a
+		summarizeBy: none
+		sourceColumn: selected
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Subscriptions = m
+		mode: import
+		queryGroup: 'Azure Resource Graph'
+		source =
+				let
+				    Source = AzureResourceGraph.Query("Resources#(lf)| where type =~ ""microsoft.cognitiveservices/accounts""#(lf)| where kind =~ ""OpenAI""#(lf)| order by name asc#(lf)| extend Rank = row_number()#(lf)| project value = id, label = id, selected = Rank <= 5", "Tenant", null, null, [resultTruncated=null]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"value", type text}, {"label", type text}, {"selected", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

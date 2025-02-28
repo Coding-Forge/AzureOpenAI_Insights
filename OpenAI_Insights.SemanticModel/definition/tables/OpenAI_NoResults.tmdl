@@ -1,0 +1,24 @@
+table OpenAI_NoResults
+	lineageTag: 0fe8dab9-ea9c-48f2-a191-ae8d9ae482fa
+
+	column Results
+		dataType: string
+		lineageTag: 5bad7f12-4d71-45ce-b836-55a5953d83e5
+		summarizeBy: none
+		sourceColumn: Results
+
+		annotation SummarizationSetBy = Automatic
+
+	partition OpenAI_NoResults = m
+		mode: import
+		queryGroup: 'Azure Resource Graph'
+		source =
+				let
+				    Source = AzureResourceGraph.Query("resources#(lf)| where type =~ ""microsoft.cognitiveservices/accounts""#(lf)| where kind =~ ""OpenAI""#(lf)| where name in~ (split(""{Resources:label}"", "", ""))#(lf)| summarize count(type) by subscriptionId#(lf)", "Tenant", null, null, [resultTruncated=null])
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
