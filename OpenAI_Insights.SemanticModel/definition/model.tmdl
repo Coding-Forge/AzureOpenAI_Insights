@@ -22,11 +22,15 @@ queryGroup 'Log Analytics'
 
 	annotation PBI_QueryGroupOrder = 3
 
-annotation PBI_QueryOrder = ["OpenAI","Subscriptions","OpenAI_NoResults","Cognitive_Services","Resources","OpenAI_By_ResourceGroup","OpenAI_By_SubscriptionId","OpenAI_By_Region","Cognitive_Services_Kind","OpenAI_Public_Network","OpenAI_Private_Network","OpenAI_Private_Network_Endpoints","Operational_Insights","OpenAI_Models","OpenAI_Insights","AzureOpenAINormalizedTTFTInMS","AzureOpenAITTLTInMS","GeneratedTokens","ProcessedPromptTokens","TokenTransaction","LogAnalyticsWorskspaceId","AzureMetrics","MetricName","TimeSpanInDays"]
+queryGroup Parameters
+
+	annotation PBI_QueryGroupOrder = 4
+
+annotation PBI_QueryOrder = ["OpenAI","Subscriptions","OpenAI_NoResults","Cognitive_Services","Resources","OpenAI_By_ResourceGroup","OpenAI_By_SubscriptionId","OpenAI_By_Region","Cognitive_Services_Kind","OpenAI_Public_Network","OpenAI_Private_Network","OpenAI_Private_Network_Endpoints","Operational_Insights","OpenAI_Models","OpenAI_Insights","AzureOpenAINormalizedTTFTInMS","AzureOpenAITTLTInMS","GeneratedTokens","ProcessedPromptTokens","TokenTransaction","LogAnalyticsWorskspaceId","AzureMetrics","MetricName","TimeSpanInDays","LogAnalyticsEndpoint"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBIDesktopVersion = 2.140.829.0 (25.02)+64e0b2e37258cf248e8119ae244f4e8e75927166
+annotation PBIDesktopVersion = 2.141.528.0 (25.03)+364bcf2c2b5bb0f5ca49d6d6922a547463bcdfd8
 
 annotation PBI_ProTooling = ["DevMode"]
 

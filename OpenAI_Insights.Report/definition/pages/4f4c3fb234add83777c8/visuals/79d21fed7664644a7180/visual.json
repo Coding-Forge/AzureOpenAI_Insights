@@ -80,7 +80,7 @@
             "relativePeriod": {
               "expr": {
                 "Literal": {
-                  "Value": "'Months'"
+                  "Value": "'Weeks'"
                 }
               }
             }
@@ -141,7 +141,7 @@
                                   }
                                 },
                                 "Amount": -1,
-                                "TimeUnit": 2
+                                "TimeUnit": 1
                               }
                             },
                             "TimeUnit": 0

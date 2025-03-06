@@ -356,10 +356,10 @@ table AzureOpenAINormalizedTTFTInMS
 		queryGroup: 'Log Analytics\Azure Metrics'
 		source = ```
 				let AnalyticsQuery =
-				let Source = Json.Document(Web.Contents("https://api.loganalytics.io/v1/workspaces/" & LogAnalyticsWorskspaceId & "/query", 
+				let Source = Json.Document(Web.Contents(LogAnalyticsEndpoint & "/v1/workspaces/" & LogAnalyticsWorskspaceId & "/query", 
 				[Query=[#"query"="AzureMetrics
 				
-				",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="P1D",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
+				",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="P"& TimeSpanInDays &"D",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
 				TypeMap = #table(
 				{ "AnalyticsTypes", "Type" }, 
 				{ 

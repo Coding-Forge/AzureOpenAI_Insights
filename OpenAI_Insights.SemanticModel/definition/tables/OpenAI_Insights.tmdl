@@ -1126,7 +1126,7 @@ table OpenAI_Insights
 				
 				
 				let AnalyticsQuery =
-				let Source = Json.Document(Web.Contents("https://api.loganalytics.io/v1/workspaces/" & LogAnalyticsWorskspaceId & "/query", 
+				let Source = Json.Document(Web.Contents(LogAnalyticsEndpoint & "/v1/workspaces/" & LogAnalyticsWorskspaceId & "/query", 
 				[Query=[#"query"="AzureDiagnostics
 				| where ResourceProvider == ""MICROSOFT.COGNITIVESERVICES""
 				    and Category == ""RequestResponse""

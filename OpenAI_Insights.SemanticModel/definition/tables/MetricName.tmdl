@@ -14,10 +14,11 @@ table MetricName
 		queryGroup: 'Log Analytics\Azure Metrics'
 		source = ```
 				let AnalyticsQuery =
-				let Source = Json.Document(Web.Contents("https://api.loganalytics.io/v1/workspaces/b949fafd-e4e0-4d98-b02c-5d6516f0e9de/query", 
+				let Source = Json.Document(Web.Contents(LogAnalyticsEndpoint & "/v1/workspaces/b949fafd-e4e0-4d98-b02c-5d6516f0e9de/query", 
 				[Query=[#"query"="AzureMetrics
+				",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="P"& TimeSpanInDays &"D",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
 				
-				",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="2025-01-01T17:29:16.000Z/2025-12-31T17:29:16.529Z",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
+				// ",#"x-ms-app"="OmsAnalyticsPBI",#"timespan"="2025-01-01T17:29:16.000Z/2025-12-31T17:29:16.529Z",#"prefer"="ai.response-thinning=true"],Timeout=#duration(0,0,4,0)])),
 				TypeMap = #table(
 				{ "AnalyticsTypes", "Type" }, 
 				{ 

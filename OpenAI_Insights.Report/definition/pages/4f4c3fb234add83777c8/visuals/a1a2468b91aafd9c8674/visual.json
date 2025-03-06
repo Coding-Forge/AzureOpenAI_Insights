@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.6.0/schema.json",
   "name": "a1a2468b91aafd9c8674",
   "position": {
     "x": 427.14011204633414,
@@ -166,14 +166,14 @@
                           "Entity": "AzureMetrics"
                         }
                       },
-                      "Property": "Minimum"
+                      "Property": "Count"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(AzureMetrics.Minimum)",
-              "nativeQueryRef": "Sum of Minimum"
+              "queryRef": "Sum(AzureMetrics.Count)",
+              "nativeQueryRef": "Sum of Count"
             }
           ]
         }

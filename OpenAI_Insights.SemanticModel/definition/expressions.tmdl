@@ -1,13 +1,23 @@
 expression LogAnalyticsWorskspaceId = "b949fafd-e4e0-4d98-b02c-5d6516f0e9de" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: 8a86c391-bbb0-4003-9124-3e52976a1769
+	queryGroup: Parameters
 
 	annotation PBI_NavigationStepName = Navigation
 
 	annotation PBI_ResultType = Text
 
 /// Only use whole number to go back from current date
-expression TimeSpanInDays = "90" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+expression TimeSpanInDays = "30" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
 	lineageTag: 4b3a0e9c-10b2-4d59-9bc7-5f086d725ac0
+	queryGroup: Parameters
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression LogAnalyticsEndpoint = "https://api.loganalytics.io" meta [IsParameterQuery=true, List={"https://api.loganalytics.io", "https://api.loganalytics.us"}, DefaultValue="https://api.loganalytics.io", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 8d63ac8e-a3b4-4d63-be33-1e39542328ae
+	queryGroup: Parameters
 
 	annotation PBI_NavigationStepName = Navigation
 

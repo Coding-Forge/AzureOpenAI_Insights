@@ -86,13 +86,12 @@ relationship e83c0833-1021-8d0e-9c47-a45966f5c07a
 
 relationship 7ca18ffc-e8b9-77cf-d433-9990641ef414
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
 	fromColumn: AzureOpenAINormalizedTTFTInMS.SubscriptionId
 	toColumn: OpenAI.SubscriptionId
 
 relationship 670c9dfb-0f21-d943-992a-f997fb5e4093
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
+	toCardinality: many
 	fromColumn: AzureOpenAITTLTInMS.SubscriptionId
 	toColumn: OpenAI.SubscriptionId
 
@@ -126,14 +125,13 @@ relationship 422645f9-bd05-888b-4145-855ea909e86b
 relationship 2bc0aa30-3a65-bb82-19ce-ae808440f921
 	isActive: false
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
 	fromColumn: AzureOpenAINormalizedTTFTInMS.ResourceGroup
 	toColumn: Cognitive_Services.resourceGroup
 
 relationship b5650f91-eacf-64a0-70c9-3f90d8bfe594
 	isActive: false
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
+	toCardinality: many
 	fromColumn: AzureOpenAITTLTInMS.ResourceGroup
 	toColumn: Cognitive_Services.resourceGroup
 
@@ -171,14 +169,13 @@ relationship a0bc5a07-8125-a1ee-a841-8583f156a543
 relationship 57a2df4b-f372-4621-8dbb-3a0e6dd738ff
 	isActive: false
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
 	fromColumn: AzureOpenAINormalizedTTFTInMS.ResourceGroup
 	toColumn: OpenAI_By_ResourceGroup.resourceGroup
 
 relationship b54ede37-a5bc-c2db-ef28-f029b241e41b
 	isActive: false
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
+	toCardinality: many
 	fromColumn: AzureOpenAITTLTInMS.ResourceGroup
 	toColumn: OpenAI_By_ResourceGroup.resourceGroup
 
@@ -249,51 +246,61 @@ relationship 5b7ddf99-8d63-ec4f-8140-5c2ec285db7b
 
 relationship f9a6a60d-00fa-963c-5d70-64f8e61377ae
 	isActive: false
+	toCardinality: many
 	fromColumn: OpenAI_Insights.TenantId
 	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
 
 relationship a095ff0a-3511-2bd9-a558-75c49f21e092
 	isActive: false
+	toCardinality: many
 	fromColumn: GeneratedTokens.TenantId
 	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
 
 relationship cdd2b555-ee59-d7a5-71bc-7a00fd6028f9
 	isActive: false
+	toCardinality: many
 	fromColumn: ProcessedPromptTokens.TenantId
 	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
 
 relationship a4aa1194-fcb7-856e-19e4-650340e47cf1
 	isActive: false
+	toCardinality: many
 	fromColumn: TokenTransaction.TenantId
 	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
 
 relationship 69338cd0-9b7a-ca7c-8d3f-16d7e6cd0ceb
 	isActive: false
+	toCardinality: many
 	fromColumn: AzureMetrics.TenantId
 	toColumn: AzureOpenAINormalizedTTFTInMS.TenantId
 
 relationship 623e5ca8-5354-df70-f5ab-efe78fc340e6
 	isActive: false
+	toCardinality: many
 	fromColumn: OpenAI_Insights.TenantId
 	toColumn: AzureOpenAITTLTInMS.TenantId
 
 relationship e9abfbf1-dd56-52bf-8e1e-1cf716325720
 	isActive: false
+	toCardinality: many
 	fromColumn: GeneratedTokens.TenantId
 	toColumn: AzureOpenAITTLTInMS.TenantId
 
 relationship 8f70493a-5310-4333-f3e2-cab03ab7f808
 	isActive: false
+	toCardinality: many
 	fromColumn: ProcessedPromptTokens.TenantId
 	toColumn: AzureOpenAITTLTInMS.TenantId
 
 relationship 550a0165-88c1-10b6-6363-6363c9e64d43
 	isActive: false
+	toCardinality: many
 	fromColumn: TokenTransaction.TenantId
 	toColumn: AzureOpenAITTLTInMS.TenantId
 
 relationship 3cb21005-6009-f804-a4c4-69589cdcadaa
 	isActive: false
+	toCardinality: many
 	fromColumn: AzureMetrics.TenantId
 	toColumn: AzureOpenAITTLTInMS.TenantId
 
@@ -323,14 +330,13 @@ relationship 94f49888-0f39-6727-eeeb-600cbb38032c
 
 relationship a1e691b7-4d81-35f8-ad26-171cc44e2638
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
 	fromColumn: AzureOpenAINormalizedTTFTInMS.MetricName
 	toColumn: MetricName.MetricName
 
 relationship c1ca2a7e-73cb-220c-975a-df57b8e65f7f
 	isActive: false
 	crossFilteringBehavior: bothDirections
-	fromCardinality: one
+	toCardinality: many
 	fromColumn: AzureOpenAITTLTInMS.MetricName
 	toColumn: MetricName.MetricName
 
